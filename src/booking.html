@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/booking.css">
+    <title>Saint Anthony</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="../index.html" id="brand">Saint Anthony</a>
+            <nav class="navbar">
+                <a href="#" id="burger-icon">&#9776;</a>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="booking.html" class="active">Booking</a>
+                    </li>
+                    <li>
+                        <a href="#">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="#">Rooms</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="banner">
+                <img src="../images/pics/bookingBanner.jpeg" alt="">
+                <h1>What & When
+                    <br>We'll handle the rest for you</h1>
+            </section>
+            <section class="form">
+                <h2>Booking & Contact</h2>
+                <hr>
+                <div class="infos">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="infos">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="infos">
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="infos">
+                    <input type="text" name="street" id="street" required>
+                    <label for="street">Street</label>
+                </div>
+                <div class="infos">
+                    <input type="number" id="street-number" name="number" required> 
+                    <label for="street-number">Number</label>
+                </div>
+                <div class="infos">
+                    <input type="text" name="city" id="city" required>
+                    <label for="city">City</label>
+                </div>
+                <div class="infos">
+                    <input type="text" name="country" id="country" required>
+                    <label for="country">Country</label>
+                </div>
+                <h2>Details</h2>
+                <hr>
+                <div class="infos">
+                    <input type="date" name="arrive" id="arrive" required>
+                    <label for="arrive">Arrive</label>
+                </div>
+                <div class="infos">
+                    <input type="date" name="depart" id="depart" required>
+                    <label for="depart">Departure</label>
+                </div>
+                <div class="infos">
+                    <select name="people" id="people" required>
+                        <option value="blank" selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <label for="people">People</label>
+                </div>
+                <div class="infos">
+                    <select name="room" id="room" required>
+                        <option value="blank" selected></option>
+                        <option value="Single Room">Single Room</option>
+                        <option value="Double Room">Double Room</option>
+                        <option value="Royal Deluxe">Royal Deluxe</option>
+                        <option value="Appartment Type">Appartment Type</option>
+                        <option value="Presidential Appartment">Presidential Appartment</option>
+                    </select>
+                    <label for="room">Room Type</label>
+                </div>
+                <p>Please descrbe any extra needs you might have.</p>
+                <div class="comments">
+                    <textarea name="comms" id="comms" cols="30" rows="10"></textarea>
+                    <label for="comms">Comments</label>
+                </div>
+                <button type="submit" value="Submit">Submit</button>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
