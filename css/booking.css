@@ -111,57 +111,172 @@ nav ul li{
     text-transform: uppercase;
 }
 
-.form{
+form{
     width: 100%;
-    margin: 0 auto;
+    text-align: left;
 }
 
-.form h2{
-    font-size: 200%;
-    font-weight: 50;
-    margin: 10px;
-    text-align: left;
-    text-transform: uppercase;
+form h2{
+    font-size: 180%;
+    font-weight: 100;
     border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
-.infos{
-    position: relative;
-    text-align: left;
+form p{
+    font-size: 140%;
+    margin-top: 3rem;
 }
 
-.infos input,select,textarea,button{
-    padding: 12px;
+.fields{
+    padding: 0.6em;
+}
+
+.fields label{
+    margin-right: 5px;
+    font-size: 120%;
+}
+
+.fields input{
+    padding: 10px;
     font-size: 16px;
-    font-weight: 300;
-    border: 1px solid #b8b9ba;
+    margin: 3px;
+    width: 90%;
+    border: 1px solid grey;
     border-radius: 5px;
+}
+
+.fields select{
+    padding: 10px;
+    font-size: 16px;
+    margin: 3px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.fields textarea{
     width: 100%;
-    margin-bottom: 18px;
+    height: 15rem;
+    font-size: 150%;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
-.infos input:focus,input:hover,select:focus,select:hover,textarea:focus,textarea:hover,button:focus,button:hover{
-    outline: none;
-    border-color: #b8b9ba;
+#firstname{
+    width: 45%;
 }
 
-.infos input:focus + label, select:focus + label{
-    display: none;
+#lastname{
+    width: 45%;
 }
 
-.infos input:valid + label, select:valid + label{
-    display: none;
+#guests{
+    width: 86%;
 }
 
-.infos label{
-    position: absolute;
-    left: 8px;
-    top: 12px;
+#depart{
+    width: 88%;
+}
+
+#yes{
     width: 8%;
-    color: #b8b9ba;
 }
 
-.infos label:focus,label:hover{
-    color: #0dc65e;
-    cursor: text;
+#no{
+    width: 8%;
+}
+
+#submit{
+    width: 100%;
+    font-size: 130%;
+}
+
+@media screen and (max-width: 1215px){
+    #firstname{
+        width: 30%;
+    }
+
+    #lastname{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .banner h1{
+        font-size: 185%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    header{
+        height: 80px;
+        position: relative;
+    }
+
+    #brand{
+        font-size: 150%;
+        padding: 25px;
+    }
+
+    #burger-icon{
+        display: inline-block;
+        font-size: 145%;
+    }
+
+    nav:hover ul{
+        display: block;
+    }
+
+    nav ul, nav:active ul{
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: #edeeef;
+        border: 1px solid #001121;
+        right: 20px;
+        width: 40%;
+        opacity: .90;
+    }
+    nav ul li{
+        text-align: center;
+        width: 100%;
+        font-size: 120%;
+    }
+
+    .banner h1{
+        font-size: 165%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    form h2{
+        font-size: 140%;
+    }
+
+    form p{
+        font-size: 120%;
+    }
+
+    .fields label{
+        font-size: 100%;
+    }
+
+    .fields input, select{
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .banner h1{
+        font-size:135%;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    .banner h1{
+        font-size: 110%;
+    }
 }

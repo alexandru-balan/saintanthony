@@ -41,75 +41,61 @@
                 <h1>What & When
                     <br>We'll handle the rest for you</h1>
             </section>
-            <section class="form">
-                <h2>Booking & Contact</h2>
-                <hr>
-                <div class="infos">
-                    <input type="text" id="name" name="name" required>
-                    <label for="name">Name</label>
+            <form action="GET">
+                <h2>Personal Details</h2>
+                <div class="fields">
+                    <label for="firstname">Name</label>
+                    <input type="text" name="firstname" id="firstname" required placeholder="First name">
+                    <input type="text" name="lastname" id="lastname" required placeholder="Last name">
                 </div>
-                <div class="infos">
-                    <input type="email" id="email" name="email" required>
+                <div class="fields">
                     <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Your email adress">
                 </div>
-                <div class="infos">
-                    <input type="tel" id="phone" name="phone" required>
-                    <label for="phone">Phone</label>
+                <h2>Booking Details</h2>
+                <div class="fields">
+                    <label for="room">Room Type</label>
+                    <select name="room" id="room" required>
+                        <option value="blank"></option>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="appartement">Appartement</option>
+                        <option value="royal">Royal Room</option>
+                    </select>
                 </div>
-                <div class="infos">
-                    <input type="text" name="street" id="street" required>
-                    <label for="street">Street</label>
-                </div>
-                <div class="infos">
-                    <input type="number" id="street-number" name="number" required> 
-                    <label for="street-number">Number</label>
-                </div>
-                <div class="infos">
-                    <input type="text" name="city" id="city" required>
-                    <label for="city">City</label>
-                </div>
-                <div class="infos">
-                    <input type="text" name="country" id="country" required>
-                    <label for="country">Country</label>
-                </div>
-                <h2>Details</h2>
-                <hr>
-                <div class="infos">
-                    <input type="date" name="arrive" id="arrive" required>
-                    <label for="arrive">Arrive</label>
-                </div>
-                <div class="infos">
-                    <input type="date" name="depart" id="depart" required>
-                    <label for="depart">Departure</label>
-                </div>
-                <div class="infos">
-                    <select name="people" id="people" required>
-                        <option value="blank" selected></option>
+                <div class="fields">
+                    <label for="guests">Number of people</label>
+                    <select name="guests" id="guests" required>
+                        <option value=""></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                     </select>
-                    <label for="people">People</label>
                 </div>
-                <div class="infos">
-                    <select name="room" id="room" required>
-                        <option value="blank" selected></option>
-                        <option value="Single Room">Single Room</option>
-                        <option value="Double Room">Double Room</option>
-                        <option value="Royal Deluxe">Royal Deluxe</option>
-                        <option value="Appartment Type">Appartment Type</option>
-                        <option value="Presidential Appartment">Presidential Appartment</option>
-                    </select>
-                    <label for="room">Room Type</label>
+                <div class="fields">
+                    <label for="arrival">Arrival Date</label>
+                    <input type="date" name="arrival" id="arrival" required placeholder="Arrival">
                 </div>
-                <p>Please descrbe any extra needs you might have.</p>
-                <div class="comments">
-                    <textarea name="comms" id="comms" cols="30" rows="10"></textarea>
-                    <label for="comms">Comments</label>
+                <div class="fields">
+                    <label for="depart">Departure Date</label>
+                    <input type="date" name="depart" id="depart" required placeholder="Departure">
                 </div>
-                <button type="submit" value="Submit">Submit</button>
-            </section>
+                <p>Would you like to include our meal service?</p>
+                <div class="fields">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" name="yes" id="yes">
+                    <label for="no">No</label>
+                    <input type="checkbox" name="no" id="no">
+                </div>
+                <h2>Any special requests?</h2>
+                <div class="fields">
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <div class="fields">
+                    <input type="submit" name="submit" id="submit">
+                </div>
+            </form>
         </main>
     </div>
 </body>
