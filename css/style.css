@@ -158,10 +158,6 @@ nav ul li{
         font-size: 145%;
     }
 
-    nav:hover ul{
-        display: block;
-    }
-
     nav ul, nav:active ul{
         display: none;
         z-index: 1000;
@@ -177,6 +173,10 @@ nav ul li{
         text-align: center;
         width: 100%;
         font-size: 120%;
+    }
+
+    nav:hover ul{
+        display: block;
     }
 
     .banner img{
