@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.png" type="image/x-icon">
+    <title>Saint Anthony</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html" id="brand">Saint Anthony</a>
+            <nav class="navbar">
+                <a href="#" id="burger-icon">&#9776;</a>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="booking.html">Booking</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="rooms.html">Rooms</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="infos">
+                <h1>Find us at: </h1>
+                <a href="../index.html">Our Webpage</a>
+                <p>or</p>
+                <a href="tel:+40859462147">0859462147</a>
+                <p>or email us at</p>
+                <a href="mailto:customers@sa.com">customers@sa.com</a>
+            </section>
+            <section class="map-wrapper">
+                <div id="map">
+                    <script>
+                        function initMap (){
+                            var buc = {lat: 44.441481, lng: 26.099957};
+                            var map = new google.maps.Map(document.getElementById('map'),{
+                                zoom: 14,
+                                center: buc
+                            });
+                            var marker = new google.maps.Marker({
+                                position: buc,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPv40lYBd1SXA6hwlwe0BzYQ7MRe9KWjg&callback=initMap">
+                    </script>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
